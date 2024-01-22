@@ -1,8 +1,8 @@
-# WireGuard-Manager: Secure Your Network 💻 🖥 !
+# WireGuard-Manager: Secure Your Network 💻 🖥!
 
 ## 🔰 Introduction
 
-Welcome to WireGuard-Manager, your solution for setting up WireGuard, a cutting-edge VPN protocol. WireGuard is known for its speed, security, and ease-of-use, making it an ideal choice for both personal and professional VPN needs. This tool is designed to simplify the installation and management of WireGuard, ensuring a secure and efficient networking experience.
+Welcome to WireGuard-Manager, your solution for setting up WireGuard, a cutting-edge VPN protocol. WireGuard is known for its speed, security, and ease of use, making it an ideal choice for both personal and professional VPN needs. This tool is designed to simplify the installation and management of WireGuard, ensuring a secure and efficient networking experience.
 
 ## Quality and Reliability
 
@@ -39,7 +39,7 @@ Welcome to WireGuard-Manager, your solution for setting up WireGuard, a cutting-
 ### Licensing
 
 - **Project License**: Our work is under the Apache 2.0 License:
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://raw.githubusercontent.com/complexorganizations/wireguard-manager/main/License.md)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/complexorganizations/wireguard-manager/blob/main/license.md)
 
 ## ✊ Show Your Support
 
@@ -320,11 +320,11 @@ This section compares the internet speed differences between using no VPN, WireG
 
 ### No VPN (Normal Connection)
 
-![No VPN Speed Test](https://www.speedtest.net/result/15594017199.png)
+![No VPN Speed Test](https://www.speedtest.net/result/15776043000.png)
 
 ### WireGuard Speed Test
 
-![Wireguard Speed Test](https://www.speedtest.net/result/15593888174.png)
+![Wireguard Speed Test](https://www.speedtest.net/result/15776045897.png)
 
 ### OpenVPN Speed Test
 
@@ -364,7 +364,7 @@ git clone https://github.com/complexorganizations/wireguard-manager /root/
 bash -x /root/wireguard-manager/wireguard-manager.sh >>/root/wireguard-manager/wireguard-manager.log
 ```
 
-By following these steps, you can either quickly modify the code online without cloning or perform a more comprehensive debugging process by cloning the repository to your local machine. Each method offers different benefits depending on your needs and the extent of your work with the WireGuard Manager script.
+Following these steps, you can either quickly modify the code online without cloning or perform a more comprehensive debugging process by cloning the repository to your local machine. Each method offers different benefits depending on your needs and the extent of your work with the WireGuard Manager script.
 
 ### Detailed Debugging Guide for WireGuard Manager
 
@@ -428,8 +428,10 @@ Join our community on [![Discord](https://raw.githubusercontent.com/complexorgan
 
 ## 🤝 Sponsors
 
-This project is sponsored by [![Digital Ocean](https://raw.githubusercontent.com/complexorganizations/wireguard-manager/main/assets/images/icons/digitalocean.svg)](https://www.digitalocean.com)
+This project is sponsored by
+
+[![Digital Ocean](https://raw.githubusercontent.com/complexorganizations/wireguard-manager/main/assets/images/icons/digitalocean.svg)](https://www.digitalocean.com) [![Google Cloud](https://raw.githubusercontent.com/complexorganizations/wireguard-manager/main/assets/images/icons/gcp.svg)](https://cloud.google.com) [![AWS](https://raw.githubusercontent.com/complexorganizations/wireguard-manager/main/assets/images/icons/aws.svg)](https://aws.amazon.com) [![Linode](https://raw.githubusercontent.com/complexorganizations/wireguard-manager/main/assets/images/icons/linode.svg)](https://linode.com)
 
 ## 📝 License
 
-WireGuard-Manager is licensed under the Apache License Version 2.0. For more details, please refer to our [License File](https://raw.githubusercontent.com/complexorganizations/wireguard-manager/main/.github/LICENSE).
+WireGuard-Manager is licensed under the Apache License Version 2.0. For more details, please refer to our [License File](https://github.com/complexorganizations/wireguard-manager/blob/main/license.md).
