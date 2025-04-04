@@ -260,7 +260,7 @@ case $(shuf --input-range=1-5 --head-count=1) in
   UNBOUND_ROOT_SERVER_CONFIG_URL="https://www.internic.net/domain/named.cache"
   ;;
 5)
-  UNBOUND_ROOT_SERVER_CONFIG_URL="https://gitlab.com/complexorganizations/wireguard-manager/-/raw/main/assets/named.cache"
+  UNBOUND_ROOT_SERVER_CONFIG_URL="https://gitlab.com/complex-organizations/wireguard-manager/-/raw/main/assets/named.cache"
   ;;
 esac
 case $(shuf --input-range=1-5 --head-count=1) in
@@ -277,7 +277,7 @@ case $(shuf --input-range=1-5 --head-count=1) in
   UNBOUND_CONFIG_HOST_URL="https://combinatronics.io/complexorganizations/content-blocker/main/assets/hosts"
   ;;
 5)
-  UNBOUND_CONFIG_HOST_URL="https://gitlab.com/complexorganizations/wireguard-manager/-/raw/main/assets/hosts"
+  UNBOUND_CONFIG_HOST_URL="https://gitlab.com/complex-organizations/wireguard-manager/-/raw/main/assets/hosts"
   ;;
 esac
 case $(shuf --input-range=1-5 --head-count=1) in
@@ -294,7 +294,7 @@ case $(shuf --input-range=1-5 --head-count=1) in
   WIREGUARD_MANAGER_UPDATE="https://combinatronics.io/complexorganizations/wireguard-manager/main/wireguard-manager.sh"
   ;;
 5)
-  WIREGUARD_MANAGER_UPDATE="https://gitlab.com/complexorganizations/wireguard-manager/-/raw/main/wireguard-manager.sh"
+  WIREGUARD_MANAGER_UPDATE="https://gitlab.com/complex-organizations/wireguard-manager/-/raw/main/wireguard-manager.sh"
   ;;
 esac
 # Check if the CURRENT_DISTRO variable matches any of the following distros:
@@ -1151,12 +1151,6 @@ if [ ! -f "${WIREGUARD_CONFIG}" ]; then
       # For Debian-based distributions, update the package list and install WireGuard.
       if { [ "${CURRENT_DISTRO}" == "ubuntu" ] || [ "${CURRENT_DISTRO}" == "debian" ] || [ "${CURRENT_DISTRO}" == "raspbian" ] || [ "${CURRENT_DISTRO}" == "pop" ] || [ "${CURRENT_DISTRO}" == "kali" ] || [ "${CURRENT_DISTRO}" == "linuxmint" ] || [ "${CURRENT_DISTRO}" == "neon" ]; }; then
         apt-get update
-        if [ ! -f "/etc/apt/sources.list.d/backports.list" ]; then
-          echo "deb http://deb.debian.org/debian buster-backports main" >>/etc/apt/sources.list.d/backports.list
-          apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 648ACFD622F3D138
-          apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 0E98404D386FA1D9
-          apt-get update
-        fi
         apt-get install wireguard -y
       # For Arch-based distributions, update the package list and install WireGuard tools.
       elif { [ "${CURRENT_DISTRO}" == "arch" ] || [ "${CURRENT_DISTRO}" == "archarm" ] || [ "${CURRENT_DISTRO}" == "manjaro" ]; }; then
